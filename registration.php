@@ -22,7 +22,7 @@ if (isset($_POST["submit"])) {
     echo "Connected successfully";
 }
 
-    $query = "INSERT INTO pandas(Name,identifier,img_source) VALUES('$dname', '$username', '$raw_pass')";
+    $query = "INSERT INTO user(DisplayName,Username,Password) VALUES('$dname', '$username', '$raw_pass')";
 
     if (mysqli_query($conn, $query)) {
      echo "Information Added Successfully";
