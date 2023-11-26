@@ -2,8 +2,6 @@
 session_start();
 if(!isset($_SESSION["Username"])){
 
-
-
     header("Location:login.php");
     exit();
 }
@@ -17,14 +15,6 @@ if(isset($_REQUEST["logout"])){
 }
 
 ?>
-
-<?php
-
-
-
-
-
-?> 
 
 <html>
 
